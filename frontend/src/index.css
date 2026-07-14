@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+h2 {
+  font-size: 248px;
+  font-weight: bold;
+  padding: 6px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "inter", sans-serif;
+}
+h2::before {
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 5px;
+  background-color: #f86d72;
+  left: 0;
+  bottom: 4px;
+}
+.button {
+  cursor: pointer;
+  background-color: #f86d72;
+  color: white;
+  border-radius: 17px;
+  padding: 10px;
+
+  transition: all 0.3s ease-in-out;
+  width: 100px;
+}
+.button:hover {
+  background-color: #dd6162;
+}
